@@ -17,11 +17,12 @@ const Player = () => {
     type:"",
 
   });
+const tmdbBearerToken = import.meta.env.VITE_TMDB_BEARER_TOKEN;
 const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyODNiYzljMmNmYmVjMzYyN2U4NTNlYzRjMGM5OGY2ZSIsIm5iZiI6MTc4MzUwNTI3OS4yMywic3ViIjoiNmE0ZTIxN2Y2NjY2NjI3MzQ2NzA4MTI0Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.gHagbfybtKmjc11MXo8CWYlpkJ8dP5grAuhNTWlgeMk'
+    Authorization: `Bearer ${tmdbBearerToken}`
   }
 };
 
